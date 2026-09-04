@@ -5,7 +5,7 @@ This project started with a few recent releases catching my attention.
 Toy Story 5 came out this year to a wave of "enough sequels, give us something original" online and it went on to dominate the box office anyway, 
 closing in on $1 billion worldwide. Well yes, it's Toy Story. 
 Around the same time, Obsession, a genuinely original film with no franchise ties, 
-became one of the summer's standout successes. Disney's live-action Moana remake, a "safe," IP-backed bet if there ever was one, flopped, opening to $95 million worldwide against a $250 million budget. 
+became one of the summer's standout successes. Disney's live-action Moana remake, a "safe" IP-backed bet if there ever was one, flopped, opening to $95 million worldwide against a $250 million budget. 
 The contrast of a beloved franchise entry cruising past the complaints, an original film breaking through on its own merit and a safe remake failing anyway, made me want to actually check the claim behind all of it: is the film industry over-relying on sequels and franchises because they're a "safer bet" financially and does the data back that up?
  
 These specific 2026 releases sit outside the dataset used here (more on that below), so this project doesn't test those particular films directly. The discourse around these films just sparked the question.  
