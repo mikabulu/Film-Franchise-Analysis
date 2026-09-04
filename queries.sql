@@ -29,7 +29,6 @@ ORDER BY 1;
 
 
 -- Q2: Budget vs revenue/ROI correlation, overall and by franchise status
--- Q2: Budget vs revenue/ROI correlation, overall and by franchise status
 
 -- budget vs revenue correlation: overall, franchise, and original
 SELECT 
@@ -64,6 +63,15 @@ FROM movies;
 SELECT 
 AVG(vote_average) FILTER (WHERE franchise_status = 'subsequent') AS franchise_rating_avg, 
 AVG(vote_average) FILTER (WHERE franchise_status = 'standalone' OR franchise_status = 'starter') AS original_rating_avg
+FROM movies;
+
+-- Q3 follow-up: three-way median ROI split (not combining standalone+starter)
+-- Investigated separately after noticing starter films showed an unusually high mean ROI in Excel revealing starter films have the widest mean/median gap of the three groups, suggesting they
+-- concentrate the biggest outlier wins, more so than standalone or subsequent films individually
+SELECT 
+PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY roi) FILTER (WHERE franchise_status = 'subsequent') AS franchise_roi_median,
+PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY roi) FILTER (WHERE franchise_status = 'standalone') AS original_roi_median,
+PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY roi) FILTER (WHERE franchise_status = 'starter') AS starter_roi_median
 FROM movies;
 
 
