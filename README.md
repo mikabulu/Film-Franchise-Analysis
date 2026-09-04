@@ -20,7 +20,8 @@ The rest of this README covers what almost 5000 films' worth of budget, revenue,
   - **Starter** – the first entry in a collection (an original creative bet, even though it later spawned a series)
   - **Subsequent** – a later entry in an existing collection
 - Throughout this analysis, "original" refers to standalone + starter films combined and "franchise" refers to subsequent films specifically, since a franchise's first film was still a genuine creative risk at the time it was made.
-
+- ROI is calculated as (revenue − budget) / budget, expressed as a percentage. For example, an ROI of 200% means a film earned twice its budget back in profit.
+  
 ## Tools
 - **Python (pandas)** – data cleaning, franchise classification
 - **PostgreSQL / SQL** – core analysis (window functions, joins, correlation, percentile functions)
@@ -40,7 +41,7 @@ The rest of this README covers what almost 5000 films' worth of budget, revenue,
 
 **2. Bigger budgets buy scale, not efficiency.** Budget correlates strongly with revenue (r = 0.70) but has almost no relationship with ROI (r = -0.05). Franchise films show an even stronger budget–revenue relationship (r = 0.75) than original films (r = 0.62). Franchise spend is a more predictable bet for raw revenue but neither group's spend reliably buys a better proportional return.
 
-**3. Franchises are the safer bet, originals are the higher-risk, higher-reward one.** Franchise films have a higher median ROI (2.38x) than original films (1.32x). A typical franchise film outperforms a typical original film. But original films have a much higher mean ROI (6.34x vs. 4.32x), driven by a small number of massive outlier hits: successful original films reach financial and critical highs franchise films have rarely ever matched. The average rating between original and franchise films is very similar (6.75/10 vs. 6.44/10).
+**3. Franchises are the safer bet, originals are the higher-risk, higher-reward one.** Franchise films have a higher median ROI (238%) than original films (132%). A typical franchise film outperforms a typical original film. But original films have a much higher mean ROI (634% vs. 432%), driven by a small number of massive outlier hits: successful original films reach financial and critical highs franchise films have rarely ever matched. The average rating between original and franchise films is very similar (6.75/10 vs. 6.44/10).
 
 **4. Original films dominate both extremes.** Across the 100 best- and 100 worst-performing films by ROI, roughly 90% in each group are original or franchise-starting films. Franchise films rarely produce either a spectacular win or a catastrophic flop, they cluster in a safer middle.
 
@@ -58,7 +59,7 @@ The rest of this README covers what almost 5000 films' worth of budget, revenue,
 - **Budget figures often reflect studio-reported estimates rather than true production costs** and studios have an incentive to underreport, a lower stated budget makes a film look more profitable in media coverage. For example, Jurassic World: Dominion is listed here with a $185M budget, while UK financial filings later revealed actual production costs of $450–658M (World of Reel, 2026). This is a well-documented industry pattern, not a one-off (IMDb, no date; Stanford Graduate School of Business, no date). ROI figures in this analysis likely overstate real profitability as a result, particularly for major studio releases.
 - **Revenue reflects theatrical box office specifically** and fails for streaming-first or TV-first releases (e.g. Society of the Snow, a Netflix original, shows a reported worldwide gross of $1,280), making genuinely successful films in terms of watch count, rating, and general discourse, appear as catastrophic flops because of the ROI.
 - **A small number of figures appear to be data entry or scraping errors** rather than genuine outliers.
-- **ROI here is a simplified** ((revenue − budget) / budget), not true net profit, it doesn't account for marketing/distribution costs or the exhibitor's share of box office revenue.
+- **ROI here is a simplified** not true net profit. It doesn't account for marketing/distribution costs or the cinema's share of box office revenue.
 - A minimum threshold of 30 films per year (and per genre, for Q5) was applied to avoid unreliable percentages from small samples. This is a reasonable cutoff rather than a statistically derived figure.
 
 
