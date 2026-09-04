@@ -37,7 +37,7 @@ The rest of this README covers what almost 5000 films' worth of budget, revenue,
 
 ## Key Findings
 
-**1. Franchise share fluctuates rather than steadily rising.** Restricted to 1984–2025 (years with at least 30 films for reliable percentages), the share of films that are franchise continuations swings between roughly 5% and 20% rather than climbing in a straight line, complicating the simple "franchises are more dominant than ever" narrative.
+**1. Franchise share fluctuates rather than steadily rising.** Restricted to 1984–2025 (years with at least 30 films for reliable percentages), the share of franchise films roughly swings between 5% and 20% rather than climbing in a straight line, complicating the simple "franchises are more dominant than ever" narrative.
 
 **2. Bigger budgets buy scale, not efficiency.** Budget correlates strongly with revenue (r = 0.70) but has almost no relationship with ROI (r = -0.05). Franchise films show an even stronger budget–revenue relationship (r = 0.75) than original films (r = 0.62). Franchise spend is a more predictable bet for raw revenue but neither group's spend reliably buys a better proportional return.
 
