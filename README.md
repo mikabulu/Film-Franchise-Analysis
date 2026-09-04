@@ -1,5 +1,5 @@
 # Film Industry Analysis: Do Franchises Really Pay Off?
-
+![Power BI Dashboard](movie_dashboard_sc.jpg)
 ## Overview
 This project started with a few recent releases catching my attention. 
 Toy Story 5 came out this year to a wave of "enough sequels, give us something original" online and it went on to dominate the box office anyway, 
@@ -48,8 +48,6 @@ The rest of this README covers what almost 5000 films' worth of budget, revenue,
 **5. Genre matters independently of franchise status.** Horror and Mystery deliver strong ROI regardless of franchise status. Beyond that, the picture diverges: franchise films additionally do well in Thriller and Romance, while original films perform best in Animation and Music.
 
 **Extra finding: starter films actually do the best out of all three groups.** All of the above groups standalone and starter films together as "original," matching how the SQL analysis was structured throughout. But out of interest, while cross-checking figures in Excel, I broke "original" down into its two individual parts using pivot tables and found starter films (the first entry in what becomes a franchise) show by far the highest ROI of the three groups, both by mean (1796.80%) and median (325.23%), higher than standalone films (332.16% / 99.76%) or franchise continuations (431.83% / 237.81%). So the real upside isn't franchise reliance itself, it's successfully launching one in the first place.
-
-![Power BI Dashboard](movie_dashboard_sc.jpg)
 
 ## Limitations
 - **The franchise flag reflects TMDB's collection groupings**, not general franchise/IP recognition. A well-known franchise that TMDB hasn't formally linked into one collection (e.g. Superman across different eras, or the same IP reused across different collections like animated vs. live-action 101 Dalmatians) may be undercounted.
